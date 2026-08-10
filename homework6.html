@@ -17,9 +17,9 @@
       <div class="row">
         <div class="col-md-7">
           <div class="form-group mt-3 py-3">
-            <label for="email">Full Name:</label>
+            <label for="name">Full Name:</label>
             <input
-              type="name"
+              type="text"
               class="form-control"
               id="name"
               placeholder="Enter name"
@@ -47,17 +47,35 @@
               <label for="comment">feedback message:</label>
               <textarea class="form-control" rows="3" id="comment"></textarea>
             </div>
+            </div>
+        </div>
 
             <div class="col-md-7">
-                <h3>Preferred Contact method</h3>
-              <div class="form-group">
-                <input type="range" class="form-control-range" name="range" />
-              </div>
+                <label>Preferred Contact method</label>
+                <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input "name="optradio">Email
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input"name="optradio" >Phone
+                        </label>
+                      </div>
+
             </div>
+
+          <div class="col-md-7 mt-3 py-3">
+
+         
+            <label>Satisfaction Level</label>
+            <input type="range" class="form-control-range"
+                      name="satisfaction" min="1" max="10">
+           </div>
 
             <div class="col-md-7">
                 <div class="dropdown dropright">
-              <div class="input-group mt-3 mb-3">
+              <div class="input-group mt-3 py-3">
                 <div class="input-group-prepend">
                   <button
                     type="button"
@@ -76,9 +94,12 @@
               
             </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
+            
+            <div class="col-md-7 mt-3 py-3">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          
+        
       </div>
     </div>
   </body>
