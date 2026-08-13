@@ -12,36 +12,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <style>
-      body {
-        background-color: #007bff;
-        min-height: 100vh;
-      }
-      .signup-btn
-      {
-        width:150px;
-      }
-    </style>
+  
   </head>
 
-  <body>
+  <body class="bg-primary">
     <div class="container">
       <div
         class="row justify-content-center align-items-center";
-        style="min-height: 100vh";
+        
       >
       <!--Main column-->
-        <div class="col-md-8">
+        <div class="col-md-6 mt-5">
           <div class="bg-white p-4">
             <h2>Sign Up</h2>
-            <p class="mb-4">Please fill in this form to create an account!</p>
+            <p class="mb-4 text-muted">Please fill in this form to create an account!</p>
 
             <!--Name-->
             <div class="row">
               <div class="col-md-6 mb-3">
                 <input
                   type="text"
-                  class="form-control bg-light"
+                  class="form-control bg-light border-0"
                   placeholder="First Name"
                 />
               </div>
@@ -49,7 +40,7 @@
               <div class="col-md-6">
                 <input
                   type="text"
-                  class="form-control bg-light"
+                  class="form-control bg-light border-0"
                   placeholder="Last Name"
                 />
               </div>
@@ -59,7 +50,7 @@
             <div class="form-group mt-3">
               <input
                 type="email"
-                class="form-control bg-light"
+                class="form-control bg-light border-0"
                 placeholder="Email"
               />
             </div>
@@ -68,7 +59,7 @@
             <div class="form-group mt-3">
               <input
                 type="password"
-                class="form-control bg-light"
+                class="form-control bg-light border-0"
                 placeholder="Password"
               />
             </div>
@@ -77,7 +68,7 @@
             <div class="form-group mt-3">
               <input
                 type="password"
-                class="form-control bg-light"
+                class="form-control bg-light border-0"
                 placeholder="Confirm Password"
               />
             </div>
@@ -86,14 +77,14 @@
             <div class="form-check mt-3">
               <input type="checkbox" class="form-check-input" />
 
-              <label class="form-check-label">
+              <label class="form-check-label text-muted">
                 I accept the <a href="#">Terms of Use</a> &
                 <a href="#">Privacy Policy.</a>
               </label>
             </div>
 
             <!--sign up button-->
-            <button type="submit" class="btn btn-primary mt-3 signup-btn">Sign Up</button>
+            <button type="submit" class="btn btn-primary mt-3 signup-btn font-weight-bold w-50">Sign Up</button>
           </div>
 
           <p class="text-center text-white mt-2">
